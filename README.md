@@ -2,7 +2,9 @@
 Data is copied from the original repo of [PINNs](https://github.com/maziarraissi/PINNs)
 
 ## Burgers Equation
-For a given field `u(x,t)` and diffusion coefficient `nu`, the general form of the equation in 1D is: ![image](assets/burgers_equ.png)
+For a given field `u(x,t)` and diffusion coefficient `nu`, the general form of the equation in 1D is:
+
+![image](assets/burgers_equ.png)
 
 ### Data
 The data includes:
@@ -13,10 +15,14 @@ The data includes:
 The loss, corresponding to the data, has two terms:
 1. MSE_u: the boundary loss, loss between ground truth value and model(boundary_points).
 2. MSE_f: the PDE loss.
+
 ![image](assets/burgers_loss.png)
 
 ## Schrodinger Equation
-The non-linear Schrodinger equation along with periodic boundary conditions is given by ![image](assets/schrodinger_equ.png)
+The non-linear Schrodinger equation along with periodic boundary conditions is given by
+
+![image](assets/schrodinger_equ.png)
+
 where `h(t,x)` is the complex-valued solution.
 
 ### Data
@@ -30,4 +36,5 @@ The loss, corresponding to the data, has three terms:
 1. MSE_0: the initial data loss.
 2. MSE_b: the boundary loss.
 3. MSE_F: the PDE loss.
+
 ![image](assets/schrodinger_loss.png)
