@@ -116,7 +116,6 @@ class CollocationDataset(Dataset):
         return self.X_f[idx]
 
 class PINN(nn.Module):
-    """ Model """
     def __init__(self, in_ch, chs, out_ch):
         super().__init__()
         self.chs = chs
